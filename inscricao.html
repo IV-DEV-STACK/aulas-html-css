@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101522">
+    <meta name="description" content="Faça sua pré-inscrição na Oficina de Tecnologia do Senac no Porto Digital.">
+    <title>Inscrição | Oficina de Tecnologia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="inscricao.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Oficina de Tecnologia, início">
+            <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+            <span>Oficina<span class="brand-light">.tech</span></span>
+        </a>
+        <nav class="main-nav" aria-label="Navegação principal">
+            <a class="nav-link" href="index.html">Início</a>
+            <a class="nav-link" href="index.html#sobre">A oficina</a>
+            <a class="button button-small" href="inscricao.html" aria-current="page">Inscreva-se <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <main class="registration-main">
+        <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Voltar para a oficina</a>
+        <div class="registration-layout">
+            <section class="registration-intro">
+                <p class="eyebrow"><span class="live-dot"></span> SUA PRÓXIMA IDEIA COMEÇA AQUI</p>
+                <h1>Vem fazer<br>parte<span class="text-gradient">.</span></h1>
+                <p>Preencha seus dados para demonstrar interesse na oficina. É só o começo da sua jornada na criação para a web.</p>
+                <div class="registration-details">
+                    <div><span class="detail-symbol">◷</span><span><strong>Segunda-feira</strong><small>14h às 17h</small></span></div>
+                    <div><span class="detail-symbol">⌖</span><span><strong>Sala AD@CETII</strong><small>Senac no Porto Digital</small></span></div>
+                    <div><span class="detail-symbol">✦</span><span><strong>Não precisa experiência</strong><small>Venha com curiosidade!</small></span></div>
+                </div>
+                <div class="registration-callout"><span aria-hidden="true">✳</span><p>Aprenda a criar páginas web interativas e descubra boas práticas de desenvolvimento.</p></div>
+            </section>
+
+            <section class="form-card" aria-labelledby="form-title">
+                <div class="form-heading">
+                    <span class="form-step">01 <span>— 01</span></span>
+                    <h2 id="form-title">Vamos nos conhecer?</h2>
+                    <p>Os campos com <span aria-hidden="true">*</span> são obrigatórios.</p>
+                </div>
+                <form id="registration-form">
+                    <div class="field">
+                        <label for="nome">Seu nome <span aria-hidden="true">*</span></label>
+                        <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Seu e-mail <span aria-hidden="true">*</span></label>
+                        <input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+                    </div>
+                    <fieldset class="field">
+                        <legend>O que mais te interessa? <span class="optional">(opcional)</span></legend>
+                        <div class="interest-options">
+                            <label class="choice"><input type="checkbox" name="interesses" value="HTML"><span>HTML e estrutura</span></label>
+                            <label class="choice"><input type="checkbox" name="interesses" value="Criatividade"><span>Criar para a web</span></label>
+                            <label class="choice"><input type="checkbox" name="interesses" value="Aprender"><span>Conhecer tecnologia</span></label>
+                        </div>
+                    </fieldset>
+                    <label class="consent"><input type="checkbox" name="consentimento" required><span>Concordo em compartilhar meus dados para manifestar interesse nesta oficina. <span aria-hidden="true">*</span></span></label>
+                    <button class="button submit-button" type="submit">Enviar minha pré-inscrição <span aria-hidden="true">→</span></button>
+                    <p class="form-privacy">Esta demonstração não envia nem armazena seus dados. Para confirmar sua vaga, fale com a organização da oficina.</p>
+                    <div class="form-success" id="form-success" role="status" tabindex="-1" hidden>
+                        <span class="success-icon" aria-hidden="true">✓</span>
+                        <div><strong>Interesse anotado!</strong><p>Obrigado, <span id="success-name"></span>. Esta é uma demonstração — seus dados não foram enviados nem armazenados. Entre em contato com a organização para confirmar sua participação.</p></div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Oficina<span class="brand-light">.tech</span></span></a>
+        <p>Aprender, experimentar, criar.</p>
+        <a href="index.html">Conheça a oficina <span aria-hidden="true">↗</span></a>
+        <small>Oficina de Tecnologia · Senac no Porto Digital</small>
+    </footer>
+</body>
+</html>
